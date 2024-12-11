@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Sneakers Store</div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner" id="home">
+        
+       
+        <a href="#products" class="btn">Mua Ngay</a>
+        
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <h2>Những Đôi Giày Chúng Tôi Có</h2>
+        <div class="product-list">
+            <div class="product" data-name="Adidas Samba OG " data-price="100">
+                <img src="anh1.png" alt="Sneaker 1">
+                <h3>Adidas Samba OG </h3>
+                <p>$100</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="Adidas Ultraboost 1.0" data-price="180">
+                <img src="anh2.png" alt="Sneaker 2">
+                <h3>Adidas Ultraboost 1.0</h3>
+                <p>$180</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="Adidas StanSmith" data-price="120">
+                <img src="anh3.png" alt="Sneaker 3">
+                <h3>Adidas StanSmith</h3>
+                <p>$120</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="Adidas Super Star" data-price="110">
+                <img src="anh4.png" alt="Sneaker 3">
+                <h3>Adidas Super Star</h3>
+                <p>$110</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="Dép Adidas 1" data-price="80">
+                <img src="anh5.png" alt="Sneaker 3">
+                <h3>Dép Adidas 1</h3>
+                <p>$80</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="Adidas Kantana" data-price="200">
+                <img src="anh6.png" alt="Sneaker 3">
+                <h3>Adidas Kantana</h3>
+                <p>$200</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="Adidas Advantage" data-price="180">
+                <img src="anh7.png" alt="Sneaker 3">
+                <h3>Adidas Advantage</h3>
+                <p>$180</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="Nike TATUM" data-price="180">
+                <img src="cmm2.png" alt="Sneaker 3">
+                <h3>Nike TATUM</h3>
+                <p>$300</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="Nike Dunk" data-price="170">
+                <img src="cmm3.png" alt="Sneaker 3">
+                <h3>Nike Dunk</h3>
+                <p>$170</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="Nike Lebron" data-price="200">
+                <img src="cmm5.png" alt="Sneaker 3">
+                <h3>Nike Lebron</h3>
+                <p>$200</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="Nike KD15 HUC" data-price="500">
+                <img src="cmm4.png" alt="Sneaker 3">
+                <h3>Nike KD15 HUC</h3>
+                <p>$500</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="New Balance 550" data-price="120">
+                <img src="anh13.png" alt="Sneaker 3">
+                <h3>New Balance 550</h3>
+                <p>$120</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="Nike Air Max 1" data-price="160">
+                <img src="anh14.png" alt="Sneaker 3">
+                <h3>Nike Air Max 1</h3>
+                <p>$160</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            <div class="product" data-name="Onitsuka Tiger" data-price="200">
+                <img src="cmm.png" alt="Sneaker 3">
+                <h3>Onitsuka Tiger</h3>
+                <p>$200</p>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart" id="cart">
+        <h2>Giỏ hàng của bạn</h2>
+        <div class="cart-items">
+            <p>Giỏ hàng của bạn đang trống.</p>
+        </div>
+    
+        <div class="cart-total">
+            <h3>Total: $<span id="cart-total">0</span></h3>
+        </div>
+        <button id="checkout-btn" class="btn" style="display: none;">Thanh Toán</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Tứ Hoàng Sneakers Store. Liên hệ 098777655</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<!-- Modal for Checkout -->
+ 
+<div class="modal" id="checkout-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Vui lòng nhập thông tin người nhận</h2>
+        <form id="checkout-form">
+            <label for="name">Họ và Tên</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="address">Địa chỉ</label>
+            <input type="text" id="address" name="address" placeholder="Enter your shipping address" required>
+
+            <label for="phone">Số Điện Thoại</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="size">Shoe Size</label>
+            <select id="size" name="size" required>
+                <option value="">Size giày của bạn</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+            </select>
+
+            <button type="submit" class="btn">Thanh Toán</button>
+        </form>
+    </div>
+</div>
+
+<!-- Product Detail Modal -->
+<div class="modal" id="product-detail-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="product-detail-name"></h2>
+        <img id="product-detail-image" src="" alt="Product Image" style="max-width: 100%; border-radius: 8px;">
+        <p id="product-detail-price"></p>
+        <p id="product-detail-description"></p>
+    </div>
+</div>
+
+</html>
